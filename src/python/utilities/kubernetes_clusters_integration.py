@@ -8,8 +8,8 @@ from termcolor import colored as color
 INTEGRATION_COMMANDS = [
     "helm repo add lightlytics https://lightlytics.github.io/helm-charts",
     "helm repo update",
-    "helm upgrade --install lightlytics --set lightlytics.apiToken={TOKEN} --set lightlytics.apiUrl={ENV} "
-    "-n lightlytics --create-namespace lightlytics/lightlytics"
+    "helm upgrade --install streamsec-agent --set streamsec.apiToken={TOKEN} --set streamsec.apiUrl={ENV} "
+    "-n lightlytics --create-namespace lightlytics/streamsec-agent"
 ]
 
 # Add the project root directory to the Python path
