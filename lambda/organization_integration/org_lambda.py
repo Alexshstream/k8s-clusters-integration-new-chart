@@ -33,10 +33,10 @@ if args.aws_profile:
 
 def _aws_clients():
     return (
-        boto3.client('iam'),
-        boto3.client('sts'),
-        boto3.client('lambda'),
-        boto3.client('events'),
+        boto3.client('iam', region_name='us-east-1'),
+        boto3.client('sts', region_name='us-east-1'),
+        boto3.client('lambda', region_name='us-east-1'),
+        boto3.client('events', region_name='us-east-1'),
     )
 
 
